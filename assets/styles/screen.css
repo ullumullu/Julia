@@ -1,0 +1,859 @@
+@charset "UTF-8";
+/*------------------------------------*\
+    SCREEN.CSS
+\*------------------------------------*/
+/**
+ * Setup
+ */
+/*------------------------------------*\
+    VARS.SCSS
+\*------------------------------------*/
+/**
+ * OBJECTS-AND-ABSTRACTIONS
+ * OVERRIDES
+ * CUSTOM
+    ^ COLORS
+    ^ FONTS
+    ^ CUSTOM FONT MIXINS
+*/
+/**
+ * Any variables you find set in inuit.cssÔÇÖ `_vars.scss` that you do not wish to
+ * keep, simply redefine here. This means that if inuit.css, for example, sets
+ * your `$base-font-size` at 16px and you wish it to be 14px, simply redeclare
+ * that variable in this file. inuit.css ignores its own variables in favour of
+ * using your own, so you can completely modify how inuit.css works without ever
+ * having to alter the framework itself.
+ */
+/*------------------------------------*\
+    $OBJECTS-AND-ABSTRACTIONS
+\*------------------------------------*/
+/**
+ * All of inuit.cssÔÇÖ objects and abstractions are initially turned off by
+ * default. This means that you start any project with as little as possible,
+ * and introducing objects and abstractions is as simple as switching the
+ * following variables to `true`.
+ */
+/*------------------------------------*\
+    $OVERRIDES
+\*------------------------------------*/
+/**
+ * Place any variables that should override inuit.cssÔÇÖ defaults here.
+ */
+/**
+ * Other overrides to inuit
+ */
+/* line 85, sass/_vars.scss */
+label {
+  cursor: default !important;
+}
+
+/* line 86, sass/_vars.scss */
+.form-fields input[type=text] {
+  cursor: text;
+}
+
+/* line 87, sass/_vars.scss */
+.check-list label {
+  cursor: pointer !important;
+}
+
+/*------------------------------------*\
+    $CUSTOM
+\*------------------------------------*/
+/**
+ * Place any of your own variables that sit on top of inuit.css here.
+ */
+/**
+ * ^COLORS 
+ */
+/**
+ * ^FONTS
+ */
+/**
+ * ^CUSTOM FONT MIXINS 
+ */
+/*------------------------------------*\
+    $CONTENTS
+\*------------------------------------*/
+/**
+ * MIXINS
+*/
+/*------------------------------------*\
+    $MIXINS
+\*------------------------------------*/
+/**
+ * She’s all yours, cap’n... Begin importing your stuff here.
+ */
+/*------------------------------------*\
+    $CONTENTS
+\*------------------------------------*/
+/**
+ * GRID
+*/
+/*------------------------------------*\
+    $GRID
+\*------------------------------------*/
+/*------------------------------------*\
+    $CONTENTS
+\*------------------------------------*/
+/**
+ * GLOBAL
+ * COLORS
+ * LOAD FONTS
+ * ICONS
+ * HEADINGS
+ * LINKS
+ * ICONS
+ * OTHER
+*/
+/*------------------------------------*\
+    $GLOBAL
+\*------------------------------------*/
+/* line 23, sass/ui/_typography.scss */
+html {
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* line 28, sass/ui/_typography.scss */
+body {
+  margin: 0px;
+}
+
+/*------------------------------------*\
+    $COLORS
+\*------------------------------------*/
+/*------------------------------------*\
+    $LOAD FONTS
+\*------------------------------------*/
+/*------------------------------------*\
+    $ICONS
+\*------------------------------------*/
+/* line 62, sass/ui/_typography.scss */
+[data-icon]:before {
+  content: attr(data-icon);
+  text-transform: none;
+  font-weight: normal;
+  font-variant: normal;
+  font-family: 'Icons';
+  line-height: 1;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*------------------------------------*\
+    $HEADINGS
+\*------------------------------------*/
+/*------------------------------------*\
+    $LINKS
+\*------------------------------------*/
+/* line 87, sass/ui/_typography.scss */
+a {
+  color: #58585B;
+}
+/* line 91, sass/ui/_typography.scss */
+a:hover {
+  color: #D70014;
+}
+
+/*------------------------------------*\
+    $OTHER
+\*------------------------------------*/
+/* line 102, sass/ui/_typography.scss */
+strong,
+.bold {
+  font-weight: bold;
+}
+
+/* line 105, sass/ui/_typography.scss */
+em {
+  font-style: italic;
+}
+
+/* line 107, sass/ui/_typography.scss */
+.no-underline {
+  text-decoration: none;
+}
+
+/* line 109, sass/ui/_typography.scss */
+::selection {
+  background: #D70014;
+  color: #FFF;
+}
+
+/* line 113, sass/ui/_typography.scss */
+::-moz-selection {
+  background: #D70014;
+  color: #FFF;
+}
+
+/*------------------------------------*\
+    $CONTENTS
+\*------------------------------------*/
+/**
+ * TEXT
+ * BACKGROUND
+ * BORDERS
+ * BLOCKS
+*/
+/*------------------------------------*\
+    $TEXT
+\*------------------------------------*/
+/* line 19, sass/ui/_color.scss */
+body {
+  color: #808284;
+}
+
+/* line 22, sass/ui/_color.scss */
+.white {
+  color: #FFF;
+}
+
+/* line 23, sass/ui/_color.scss */
+.gray1 {
+  color: #F7F7F7;
+}
+
+/* line 24, sass/ui/_color.scss */
+.gray2 {
+  color: #EEE;
+}
+
+/* line 25, sass/ui/_color.scss */
+.gray3 {
+  color: #D8D8D8;
+}
+
+/* line 26, sass/ui/_color.scss */
+.gray4 {
+  color: #9A9EA1;
+}
+
+/* line 27, sass/ui/_color.scss */
+.gray5 {
+  color: #808284;
+}
+
+/* line 28, sass/ui/_color.scss */
+.gray6 {
+  color: #58585B;
+}
+
+/* line 29, sass/ui/_color.scss */
+.black {
+  color: #000;
+}
+
+/* line 32, sass/ui/_color.scss */
+.color-twitter,
+.hover-color-twitter:hover {
+  color: #63CDF7;
+}
+
+/* line 35, sass/ui/_color.scss */
+.color-linkedin,
+.hover-color-linkedin:hover {
+  color: #00659B;
+}
+
+/* line 38, sass/ui/_color.scss */
+.color-facebook,
+.hover-color-facebook:hover {
+  color: #3B5895;
+}
+
+/* line 41, sass/ui/_color.scss */
+.color-google,
+.hover-color-google:hover {
+  color: #FF0017;
+}
+
+/* line 44, sass/ui/_color.scss */
+.color-mail,
+.hover-color-mail:hover {
+  color: #6CBA16;
+}
+
+/* line 48, sass/ui/_color.scss */
+.color1,
+.hover-color1:hover,
+.hover-color1.active {
+  color: #D70014 !important;
+}
+
+/* line 52, sass/ui/_color.scss */
+.color2,
+.hover-color2:hover,
+.hover-color2.active {
+  color: #2F7DC4 !important;
+}
+
+/* line 56, sass/ui/_color.scss */
+.color3,
+.hover-color3:hover,
+.hover-color3.active {
+  color: #6CBA16 !important;
+}
+
+/* line 60, sass/ui/_color.scss */
+.color4,
+.hover-color4:hover,
+.hover-color4.active {
+  color: #FFA501 !important;
+}
+
+/* line 64, sass/ui/_color.scss */
+.color5,
+.hover-color5:hover,
+.hover-color5.active {
+  color: #8A2CA1 !important;
+}
+
+/*------------------------------------*\
+    $BACKGROUND
+\*------------------------------------*/
+/* line 76, sass/ui/_color.scss */
+.bg-white {
+  background-color: #FFF;
+}
+
+/* line 77, sass/ui/_color.scss */
+.bg-gray1 {
+  background-color: #F7F7F7;
+}
+
+/* line 78, sass/ui/_color.scss */
+.bg-gray2 {
+  background-color: #EEE;
+}
+
+/* line 79, sass/ui/_color.scss */
+.bg-gray3 {
+  background-color: #D8D8D8;
+}
+
+/* line 80, sass/ui/_color.scss */
+.bg-gray4 {
+  background-color: #9A9EA1;
+}
+
+/* line 81, sass/ui/_color.scss */
+.bg-gray5 {
+  background-color: #808284;
+}
+
+/* line 82, sass/ui/_color.scss */
+.bg-gray6 {
+  background-color: #58585B;
+}
+
+/* line 83, sass/ui/_color.scss */
+.bg-black {
+  background-color: #000;
+}
+
+/* line 85, sass/ui/_color.scss */
+.bg-color1 {
+  background-color: #D70014;
+}
+
+/* line 86, sass/ui/_color.scss */
+.bg-color2 {
+  background-color: #2F7DC4;
+}
+
+/* line 87, sass/ui/_color.scss */
+.bg-color3 {
+  background-color: #6CBA16;
+}
+
+/* line 88, sass/ui/_color.scss */
+.bg-color4 {
+  background-color: #FFA501;
+}
+
+/* line 89, sass/ui/_color.scss */
+.bg-color5 {
+  background-color: #8A2CA1;
+}
+
+/* line 92, sass/ui/_color.scss */
+.bg-gray4,
+.bg-gray5,
+.bg-gray6,
+.bg-black,
+.bg-color1,
+.bg-color2,
+.bg-color3,
+.bg-color4,
+.bg-color5 {
+  color: #FFF;
+}
+
+/*------------------------------------*\
+    $BORDERS
+\*------------------------------------*/
+/* line 112, sass/ui/_color.scss */
+.border-color1 {
+  border-color: #D70014;
+}
+
+/* line 113, sass/ui/_color.scss */
+.border-color2 {
+  border-color: #2F7DC4;
+}
+
+/* line 114, sass/ui/_color.scss */
+.border-color3 {
+  border-color: #6CBA16;
+}
+
+/* line 115, sass/ui/_color.scss */
+.border-color4 {
+  border-color: #FFA501;
+}
+
+/* line 117, sass/ui/_color.scss */
+.border-none {
+  border: none !important;
+}
+
+/*------------------------------------*\
+    $CONTENTS
+\*------------------------------------*/
+/**
+ * LOGO
+*/
+/*------------------------------------*\
+    $LOGO
+\*------------------------------------*/
+/*------------------------------------*\
+    $CONTENTS
+\*------------------------------------*/
+/**
+ * NAV PRIMARY
+ * NAV MOBILE
+*/
+/*------------------------------------*\
+    $NAV PRIMARY
+\*------------------------------------*/
+/*------------------------------------*\
+    $NAV MOBILE
+\*------------------------------------*/
+/*------------------------------------*\
+    $CONTENTS
+\*------------------------------------*/
+/**
+ * OVERRIDES
+ * LABELS
+ * INPUTS
+ * ERRORS
+ * SIZES
+*/
+/*------------------------------------*\
+    $OVERRIDES
+\*------------------------------------*/
+/* line 20, sass/ui/_forms.scss */
+input[type=text]:active,
+input[type=text]:focus,
+input[type=password]:active,
+input[type=password]:focus {
+  cursor: text;
+  outline: none;
+}
+
+/*------------------------------------*\
+    $LABELS
+\*------------------------------------*/
+/*------------------------------------*\
+    $INPUTS
+\*------------------------------------*/
+/*------------------------------------*\ 
+    $ERRORS    
+\*------------------------------------*/
+/* line 65, sass/ui/_forms.scss */
+.field-with-errors {
+  position: relative;
+  display: inline-block;
+}
+/* line 69, sass/ui/_forms.scss */
+.field-with-errors label,
+.field-with-errors .label {
+  color: #FFA501;
+}
+/* line 74, sass/ui/_forms.scss */
+.field-with-errors input,
+.field-with-errors .select2-container .select2-choice,
+.field-with-errors .select2-container-multi .select2-choices {
+  border-color: #FFA501 !important;
+}
+
+/*------------------------------------*\
+    $SIZES
+\*------------------------------------*/
+/**
+ * Small
+ */
+/*------------------------------------*\
+    $CONTENTS
+\*------------------------------------*/
+/**
+ * BASE
+ * SIZES
+ * COLORS
+    ^Colors
+    ^Hover
+*/
+/*------------------------------------*\
+    $BASE
+\*------------------------------------*/
+/*------------------------------------*\
+    $SIZES
+\*------------------------------------*/
+/*------------------------------------*\
+    $COLORS
+\*------------------------------------*/
+/**
+ * Colors
+ */
+/**
+ * HOVERS
+ */
+/*------------------------------------*\
+    $CONTENTS
+\*------------------------------------*/
+/**
+ * FOOTER
+*/
+/*------------------------------------*\
+    $FOOTER
+\*------------------------------------*/
+/*------------------------------------*\ 
+    $CONTENTS    
+\*------------------------------------*/
+/**
+ * SECTION TITLE
+*/
+/* line 34, sass/screen.scss */
+.container {
+  overflow: hidden;
+}
+
+/* line 38, sass/screen.scss */
+.panel {
+  padding: 10px 10px 10px 10px;
+  position: relative;
+  top: 10vh;
+  left: 0%;
+  width: 75%;
+  border: 2px solid rgba(145, 174, 169, 0.95);
+  z-index: 999;
+  background-color: rgba(145, 174, 169, 0.7);
+  -webkit-box-shadow: 4px 4px 26px -6px rgba(0, 0, 0, 0.64);
+  -moz-box-shadow: 4px 4px 26px -6px rgba(0, 0, 0, 0.64);
+  box-shadow: 4px 4px 26px -6px rgba(0, 0, 0, 0.64);
+}
+/* line 51, sass/screen.scss */
+.panel p {
+  margin: 0px;
+  color: #FFF;
+  font-size: 20px;
+  text-align: justify;
+  font-family: 'Lato';
+  font-weight: normal;
+  -moz-hyphens: auto;
+  -o-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  color: white;
+  text-shadow: 0px 0px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+/* line 77, sass/screen.scss */
+.heaven {
+  background-color: #a6dbd1;
+  height: 95vh;
+  position: relative;
+  -webkit-box-shadow: 2px 10px 20px -8px #2b622b;
+  -moz-box-shadow: 2px 10px 20px -8px #2b622b;
+  box-shadow: 2px 10px 20px -8px #2b622b;
+  z-index: 1;
+}
+
+/* line 87, sass/screen.scss */
+.earth {
+  background-color: #bfd437;
+  height: 5vh;
+  position: relative;
+  border-top: 2px solid rgba(43, 98, 43, 0.3);
+  z-index: 0;
+}
+
+/* line 95, sass/screen.scss */
+.tree {
+  position: absolute;
+  bottom: 0px;
+  left: 1%;
+  height: 15vh;
+  width: 15vh;
+}
+/* line 102, sass/screen.scss */
+.tree.large {
+  zoom: 1;
+}
+/* line 106, sass/screen.scss */
+.tree.small.one {
+  zoom: 0.7;
+  left: 25%;
+}
+/* line 111, sass/screen.scss */
+.tree.small.two {
+  zoom: 0.5;
+  left: 20%;
+}
+/* line 116, sass/screen.scss */
+.tree.small.three {
+  zoom: 0.9;
+  left: 40%;
+}
+/* line 121, sass/screen.scss */
+.tree .leaf {
+  background: #c5d92c;
+  background: -moz-linear-gradient(left, #c5d92c 0%, #c5d92c 50%, #c0d437 51%, #c0d437 71%, #c0d437 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #c5d92c), color-stop(50%, #c5d92c), color-stop(51%, #c0d437), color-stop(71%, #c0d437), color-stop(100%, #c0d437));
+  background: -webkit-linear-gradient(left, #c5d92c 0%, #c5d92c 50%, #c0d437 51%, #c0d437 71%, #c0d437 100%);
+  background: -o-linear-gradient(left, #c5d92c 0%, #c5d92c 50%, #c0d437 51%, #c0d437 71%, #c0d437 100%);
+  background: -ms-linear-gradient(left, #c5d92c 0%, #c5d92c 50%, #c0d437 51%, #c0d437 71%, #c0d437 100%);
+  background: linear, to right, #c5d92c 0%, #c5d92c 50%, #c0d437 51%, #c0d437 71%, #c0d437 100%;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c5d92c', endColorstr='#c0d437', GradientType=1 );
+  height: 70%;
+  width: 70%;
+  border-radius: 50%;
+  position: relative;
+  left: 15%;
+}
+/* line 139, sass/screen.scss */
+.tree .trunk {
+  background: #a67d51;
+  background: -moz-linear-gradient(left, #a67d51 0%, #bb9662 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #a67d51), color-stop(100%, #bb9662));
+  background: -webkit-linear-gradient(left, #a67d51 0%, #bb9662 100%);
+  background: -o-linear-gradient(left, #a67d51 0%, #bb9662 100%);
+  background: -ms-linear-gradient(left, #a67d51 0%, #bb9662 100%);
+  background: linear, to right, #a67d51 0%, #bb9662 100%;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a67d51', endColorstr='#bb9662', GradientType=1 );
+  height: 30%;
+  width: 5%;
+  position: relative;
+  left: 47.5%;
+}
+
+/* line 157, sass/screen.scss */
+.hotairballoon {
+  position: absolute;
+  height: 15vh;
+  width: 15vh;
+}
+/* line 163, sass/screen.scss */
+.hotairballoon.ground {
+  bottom: 0vh;
+  left: 70%;
+}
+/* line 167, sass/screen.scss */
+.hotairballoon.ground .balloon {
+  background: -webkit-gradient(left top, right top, color-stop(0%, #7d3658), color-stop(14%, #7d3658), color-stop(50%, #631c3d), color-stop(100%, #631c3d));
+  background: -webkit-linear-gradient(left, #7d3658 0%, #7d3658 14%, #631c3d 50%, #631c3d 100%);
+  background: -o-linear-gradient(left, #7d3658 0%, #7d3658 14%, #631c3d 50%, #631c3d 100%);
+  background: -ms-linear-gradient(left, #7d3658 0%, #7d3658 14%, #631c3d 50%, #631c3d 100%);
+  background: linear, to right, #7d3658 0%, #7d3658 14%, #631c3d 50%, #631c3d 100%;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d3658', endColorstr='#631c3d', GradientType=1 );
+}
+/* line 178, sass/screen.scss */
+.hotairballoon.away {
+  top: 45vh;
+  left: 7%;
+  zoom: 0.8;
+}
+/* line 183, sass/screen.scss */
+.hotairballoon.away .balloon {
+  background: #c0e774;
+  background: -moz-linear-gradient(left, #c0e774 0%, #c0e774 78%, #dff5b2 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #c0e774), color-stop(78%, #c0e774), color-stop(100%, #dff5b2));
+  background: -webkit-linear-gradient(left, #c0e774 0%, #c0e774 78%, #dff5b2 100%);
+  background: -o-linear-gradient(left, #c0e774 0%, #c0e774 78%, #dff5b2 100%);
+  background: -ms-linear-gradient(left, #c0e774 0%, #c0e774 78%, #dff5b2 100%);
+  background: linear, to right, #c0e774 0%, #c0e774 78%, #dff5b2 100%;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c0e774', endColorstr='#dff5b2', GradientType=1 );
+}
+/* line 194, sass/screen.scss */
+.hotairballoon.faraway {
+  top: 50vh;
+  left: 65%;
+  zoom: 0.6;
+}
+/* line 204, sass/screen.scss */
+.hotairballoon .balloon {
+  height: 75%;
+  width: 75%;
+  position: relative;
+  left: 15%;
+  background-color: red;
+  border-radius: 50%;
+  box-shadow: 1px 1px grey;
+}
+/* line 214, sass/screen.scss */
+.hotairballoon .straps {
+  position: relative;
+  height: 12.5%;
+  width: 17.5%;
+  left: 42.25%;
+  box-sizing: border-box;
+  background-color: inherit;
+  border-left: 1px solid #7b5535;
+  border-right: 1px solid #7b5535;
+}
+/* line 225, sass/screen.scss */
+.hotairballoon .basket {
+  height: 12.5%;
+  width: 17.5%;
+  position: relative;
+  left: 42.25%;
+  background: #7b5535;
+  background: -moz-linear-gradient(left, #7b5535 0%, #7b5535 14%, #643d1c 50%, #643d1c 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #7b5535), color-stop(14%, #7b5535), color-stop(50%, #643d1c), color-stop(100%, #643d1c));
+  background: -webkit-linear-gradient(left, #7b5535 0%, #7b5535 14%, #643d1c 50%, #643d1c 100%);
+  background: -o-linear-gradient(left, #7b5535 0%, #7b5535 14%, #643d1c 50%, #643d1c 100%);
+  background: -ms-linear-gradient(left, #7b5535 0%, #7b5535 14%, #643d1c 50%, #643d1c 100%);
+  background: linear, to right, #7b5535 0%, #7b5535 14%, #643d1c 50%, #643d1c 100%;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7b5535', endColorstr='#643d1c', GradientType=1 );
+  box-shadow: 1px 1px grey;
+}
+
+/* line 248, sass/screen.scss */
+.cloud {
+  width: 30vw;
+  height: calc(30vw * 0.34);
+  background: #f2f9fe;
+  background: linear, top, #f2f9fe 5%, d6f0fd 100%;
+  background: -webkit-linear-gradient(top, #f2f9fe 5%, d6f0fd 100%);
+  background: -moz-linear-gradient(top, #f2f9fe 5%, d6f0fd 100%);
+  background: -ms-linear-gradient(top, #f2f9fe 5%, d6f0fd 100%);
+  background: -o-linear-gradient(top, #f2f9fe 5%, d6f0fd 100%);
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  position: absolute;
+  z-index: 5;
+}
+/* line 265, sass/screen.scss */
+.cloud.topright {
+  left: 76%;
+  top: 7%;
+}
+/* line 270, sass/screen.scss */
+.cloud.topleft {
+  left: 10%;
+  top: 10%;
+  zoom: 0.8;
+}
+/* line 276, sass/screen.scss */
+.cloud.middle {
+  left: 50%;
+  top: 8%;
+  zoom: 0.5;
+}
+/* line 282, sass/screen.scss */
+.cloud.middleright {
+  left: 70%;
+  top: 20%;
+  zoom: 0.7;
+}
+/* line 288, sass/screen.scss */
+.cloud.bottom {
+  left: 30%;
+  top: 28%;
+}
+/* line 293, sass/screen.scss */
+.cloud:after, .cloud:before {
+  content: '';
+  position: absolute;
+  background: #f2f9fe;
+  z-index: 6;
+}
+/* line 300, sass/screen.scss */
+.cloud:after {
+  width: calc(30vw * 0.285);
+  height: calc(30vw * 0.285);
+  top: calc(30vw * -0.285 / 2);
+  left: calc(30vw * 0.1428);
+  border-radius: calc(30vw * 0.285);
+  -webkit-border-radius: calc(30vw * 0.285);
+  -moz-border-radius: calc(30vw * 0.285);
+}
+/* line 309, sass/screen.scss */
+.cloud:before {
+  width: calc(30vw * 0.514);
+  height: calc(30vw * 0.514);
+  top: calc(30vw * -0.514 / 2);
+  right: calc(30vw * 0.1428);
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+}
+/* line 318, sass/screen.scss */
+.cloud .shadow {
+  width: 30vw;
+  position: absolute;
+  bottom: -10px;
+  background: #000;
+  z-index: 3;
+  box-shadow: 0 0 25px 8px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 0 25px 8px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 0 25px 8px rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  border-radius: 50%;
+  border-radius: 50%;
+}
+
+/* line 337, sass/screen.scss */
+.heart-shape {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: #c00e0e;
+  zoom: 0.3;
+}
+
+/* line 349, sass/screen.scss */
+.heart-shape:before,
+.heart-shape:after {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  content: '';
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #c00e0e;
+}
+
+/* line 361, sass/screen.scss */
+.heart-shape:before {
+  bottom: 0px;
+  left: calc(50px / -2);
+}
+
+/* line 365, sass/screen.scss */
+.heart-shape:after {
+  top: calc(50px / -2);
+  right: 0px;
+}
+
+/*# sourceMappingURL=screen.css.map */
